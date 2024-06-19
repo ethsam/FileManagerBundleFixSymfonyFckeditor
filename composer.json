@@ -1,18 +1,22 @@
 {
-  "name": "artgris/filemanager-bundle",
+  "name": "ethsam/FileManagerBundleFixSymfonyFckeditor",
   "type": "symfony-bundle",
-  "description": "FileManager is a simple Multilingual File Manager Bundle for Symfony",
+  "description": "FileManager is a simple Multilingual File Manager Bundle for Symfony + Fix Easyadmin FOSCKEDITOR",
   "keywords": [
     "symfony",
     "bundle",
     "file manager"
   ],
-  "homepage": "https://github.com/artgris/FileManagerBundle",
+  "homepage": "https://github.com/ethsam/FileManagerBundleFixSymfonyFckeditor",
   "license": "MIT",
   "authors": [
     {
-      "name": "Arthur Gribet",
+      "name": "Arthur Gribet <- Creator",
       "email": "a.gribet@gmail.com"
+    },
+    {
+      "name": "Samuel Ethève <- Fixer",
+      "email": "contact@ethsam.fr"
     }
   ],
   "require": {
