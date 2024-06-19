@@ -1,5 +1,5 @@
 {
-  "name": "ethsam/FileManagerBundleFixSymfonyFckeditor",
+  "name": "ethsam/filemanagerbundlefixsymfonyfckeditor",
   "type": "symfony-bundle",
   "description": "FileManager is a simple Multilingual File Manager Bundle for Symfony + Fix Easyadmin FOSCKEDITOR",
   "keywords": [
@@ -7,7 +7,7 @@
     "bundle",
     "file manager"
   ],
-  "homepage": "https://github.com/ethsam/FileManagerBundleFixSymfonyFckeditor",
+  "homepage": "https://github.com/ethsam/filemanagerbundlefixsymfonyfckeditor",
   "license": "MIT",
   "authors": [
     {
