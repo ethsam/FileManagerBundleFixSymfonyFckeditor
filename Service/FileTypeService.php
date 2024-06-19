@@ -34,7 +34,9 @@ class FileTypeService {
         if ('file' === $type) {
             $size = $this::IMAGE_SIZE[$fileManager->getView()];
 
-            return $this->fileIcon($filePath, $extension, $size, true, $fileManager->getConfigurationParameter('twig_extension'), $fileManager->getConfigurationParameter('cachebreaker'));
+            $filePathReal = $this->extractUploadsPath($file->getPathname());
+            // return $this->fileIcon($filePath, $extension, $size, true, $fileManager->getConfigurationParameter('twig_extension'), $fileManager->getConfigurationParameter('cachebreaker'));
+            return $this->fileIcon($filePathReal, $extension, $size, true, $fileManager->getConfigurationParameter('twig_extension'), $fileManager->getConfigurationParameter('cachebreaker'));
         }
         if ('dir' === $type) {
 
@@ -149,5 +151,16 @@ class FileTypeService {
                 ~x';
 
         return preg_match($rx, $url, $matches);
+    }
+
+    function extractUploadsPath($fullPath) {
+        $partToFind = '/public/uploads';
+        $result = strstr($fullPath, $partToFind);
+
+        if ($result !== false) {
+            return str_replace('/public', '', $result);
+        }
+        
+        return '';
     }
 }
